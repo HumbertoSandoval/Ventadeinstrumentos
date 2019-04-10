@@ -5,11 +5,11 @@
 
 <form asp-action="Save" method="post">
   <label asp-for="Nombre">Nombre</label>
-  <input type="text" asp-for="Nombre">
+  <input type="text" placeholder="Ingresar El Nombre" asp-for="Nombre">
   <label asp-for="Precio">Precio</label>
-  <input type="text" asp-for="Precio">
+  <input type="text" placeholder="Ingresar El Precio" asp-for="Precio">
   <label asp-for="Existencia">Existencia</label>
-  <input type="number" asp-for="Existencia">
+  <input type="number" placeholder="Ingresar Las Existencias" asp-for="Existencia">
   <button type="submit">Guardar</button>
   <button type="submit">Cancelar</button>
 </form>
