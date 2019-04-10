@@ -6,3 +6,7 @@
 | Matricula | Nombre | GitHub Account |
 | --- | --- | --- |
 | 1630763 | Humberto Antonio Sandoval Rochin | @HumbertoSandoval |
+
+
+#### Profesor Encargado
+Bidkar Aragon Cardenas | @bidkar |
