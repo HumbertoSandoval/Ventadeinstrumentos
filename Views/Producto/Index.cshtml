@@ -1,0 +1,37 @@
+@{
+  ViewData["Title"] = "Lista de Producto";
+}
+
+<a
+  asp-controller="Producto"
+  asp-action="New"
+>Registrar nuevo Producto</a>
+
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Existencia</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var Producto in Model)
+    {
+      <tr>
+        <td>@Producto.Nombre</td>
+        <td>@Producto.Precio</td>
+        <td>@Producto.Existencia</td>
+        <td>
+          <a href="/Producto/Edit/@Producto.Id">Editar</a>
+          <a
+            asp-controller="Producto"
+            asp-action="Delete"
+            asp-route-id="@Producto.Id"
+          >Eliminar</a>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

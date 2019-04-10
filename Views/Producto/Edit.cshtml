@@ -1,0 +1,26 @@
+@model ProductoViewModel
+@{
+  ViewData["Title"] = "Editar datos del Producto";
+}
+
+<div class="col-4">
+  <form asp-action="Edit" method="post">
+    <div class="form-group">
+      <label asp-for="Nombre">Nombre</label>
+      <input type="text" asp-for="Nombre" class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label asp-for="Precio">Precio</label>
+      <input type="text" asp-for="Precio" class="form-control">
+    </div>
+  
+    <div class="form-group">
+      <label asp-for="Existencia">Existencia</label>
+      <input type="number" asp-for="Existencia" class="form-control">
+    </div>
+    <hr>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a href="/Producto" class="btn btn-secondary">Cancelar</a>
+  </form>
+</div>

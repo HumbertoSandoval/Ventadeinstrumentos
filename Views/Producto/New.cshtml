@@ -1,0 +1,15 @@
+@model ProductoViewModel
+@{
+  ViewData["Title"] = "Registro de Producto";
+}
+
+<form asp-action="Save" method="post">
+  <label asp-for="Nombre">Nombre</label>
+  <input type="text" asp-for="Nombre">
+  <label asp-for="Precio">Precio</label>
+  <input type="text" asp-for="Precio">
+  <label asp-for="Existencia">Existencia</label>
+  <input type="number" asp-for="Existencia">
+  <button type="submit">Guardar</button>
+  <button type="submit">Cancelar</button>
+</form>
